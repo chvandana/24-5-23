@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial_scale=1.0">
+        <title>document</title> 
+    </head>
+    <body>
+        <!-- <button>click</button> -->
+        <!-- <button onclick="demo()">Click</button>
+        <script>
+            function demo(){
+            alert("on button click it appeared")
+            }         -->
+            <input placeholder="enter name" id="username"/><!--id provides unique identity -->
+            <br><input placeholder="enter password" id="password"/>
+            <br><input type="radio" id="gendermale" value="male">male
+            <input type="radio" id="genderfemale" value="female">female
+
+           <br><button onclick="store()">Submit</button>
+            <script>
+                function store(){
+
+                    // var userName=document.getElementById("username").value
+                    // console.log(userName)
+                    // var passWord=document.getElementById("password").value
+                    // console.log(passWord)
+                    var gender;
+                    var male=document.getElementById("gendermale").checked
+                    var female=document.getElementById("genderfemale").checked
+                    if(male==true)
+                        gender="male"
+                    else if(female==true)
+                        gender="female"
+                    else 
+                        gender=null
+                        console.log(gender)
+                    // console.log(male,female)
+                }
+            </script>
+        </script>
+    </body>
+    </html>
+    <!-- 
+        onclick
+        onchange
+        onsubmit
+        onkeypress
+        onkeydown
+        onkeyup
+        onmouseover
+        onmouseout
+     -->
